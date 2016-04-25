@@ -87,6 +87,28 @@ if (age >= 14 && age <=90) {
 }
 else {message = !!message};
 alert (message);
-*/
+
 
 // github connect
+
+var sum = 0;
+
+while (true) {
+
+  var value = +prompt("Введите число", '');
+
+  if (!value) break; // (*)
+
+  sum += value;
+
+}
+alert( 'Сумма: ' + sum );
+
+
+*/
+for (var dig = 0; dig < 10; dig++) {
+	if ((dig - 1) % 2) continue;
+	alert (dig);
+}
+
+
