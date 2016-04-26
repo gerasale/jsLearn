@@ -105,15 +105,59 @@ while (true) {
 alert( 'Сумма: ' + sum );
 
 
-*/
+
 for (var dig = 1; dig <= 10; ++dig) {
 	if (dig % 2) continue;  // четность проверяется по остатку деления на 2
 	alert (dig);
 }
 
-
-
-
-
 //var s = 'hello world';
 //alert (s.length); // длина строки
+
+for (var i = 0; i < 3; i++) {
+  alert( "номер " + i + "!" );
+}
+//ниже то же самое, только с помощью while
+var i = 0;
+
+while (i < 3) {
+	alert ('номер ' + i + '!');
+	i++
+}
+
+
+
+// программа запрашивает число, если меньше 100, цикл повторяется. Если cancel - отмена. 
+while (true) {
+	var diginput = prompt ('Type the digit');
+	if (diginput == null) {
+		break;
+	}
+	else if (diginput <= 100) {
+		alert ('wrong');
+	}
+	else break;
+}
+// еще вариант 
+
+var num;
+
+do {
+  num = prompt("Введите число больше 100?", 0);
+} while (num <= 100 && num != null);
+
+*/
+/*
+var i = prompt ('Type digit');
+if (+i>1&&+i<10) {
+	alert (i);
+}
+else {
+	alert ('Error');
+}
+*/
+var i = prompt ('Type digit');
+while (+i>1&&+i<10) {
+	alert (i);
+	break;
+}
