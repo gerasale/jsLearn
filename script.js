@@ -106,9 +106,14 @@ alert( 'Сумма: ' + sum );
 
 
 */
-for (var dig = 0; dig < 10; dig++) {
-	if ((dig - 1) % 2) continue;
+for (var dig = 1; dig <= 10; ++dig) {
+	if (dig % 2) continue;  // четность проверяется по остатку деления на 2
 	alert (dig);
 }
 
 
+
+
+
+//var s = 'hello world';
+//alert (s.length);
