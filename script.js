@@ -116,4 +116,4 @@ for (var dig = 1; dig <= 10; ++dig) {
 
 
 //var s = 'hello world';
-//alert (s.length);
+//alert (s.length); // длина строки
