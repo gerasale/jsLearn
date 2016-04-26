@@ -35,13 +35,13 @@ var userName = prompt ('Who are you?');
 if (userName == 'admin') {
 	var password = prompt ('Enter your password');
 	if (password == 'black') {
-		alert ('welcome') 
+		alert ('welcome')
 	}
 		else if (password == null) {
 			alert ('cancel');
 		}
 			else alert ('wrong password!')
-		
+
 	}
 else if (userName == null) {
 	alert ('cancel');
@@ -127,7 +127,7 @@ while (i < 3) {
 
 
 
-// программа запрашивает число, если меньше 100, цикл повторяется. Если cancel - отмена. 
+// программа запрашивает число, если меньше 100, цикл повторяется. Если cancel - отмена.
 while (true) {
 	var diginput = prompt ('Type the digit');
 	if (diginput == null) {
@@ -138,7 +138,7 @@ while (true) {
 	}
 	else break;
 }
-// еще вариант 
+// еще вариант
 
 var num;
 
@@ -155,9 +155,84 @@ if (+i>1&&+i<10) {
 else {
 	alert ('Error');
 }
-*/
+
 var i = prompt ('Type digit');
-while (+i>1&&+i<10) {
+while (+i>1&&+i<10&&) {
 	alert (i);
 	break;
+}
+ // какая-то хуита. Не понимаю. Венуться позже.
+
+//проверка браузера через if ... else
+var browser = prompt ('Name of your browser?');
+
+if (browser == 'IE') {
+	alert ('piece of shit');
+}
+else if (browser == 'Opera'
+	|| browser == 'Firefox'
+	|| browser == 'Safari'
+	|| browser == 'Chrome') {
+	alert ('good');
+}
+else {
+	alert ('hmmm');
+}
+
+// пример
+
+var a = +prompt('a?', '');
+
+if (a == 0) {
+  alert( 0 );
+}
+if (a == 1) {
+  alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+  alert( '2,3' );
+}
+
+// то же самое, только с использованием switch ... case
+
+var a = +prompt('a?', '');
+
+switch (a) {
+	case 0:
+	alert ('0');
+	break;
+
+	case 1:
+	alert ('1');
+	break;
+	case 2:
+	case 3:
+	alert ('2,3');
+}
+
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Родители разрешили?');
+  }
+}
+
+// функция возвращает меньшее значение
+function min(a,b){
+	if (a>b) {
+		return b;
+	}
+	else {
+		return a;
+	}
+}
+*/
+
+// функция возведения в степень
+
+var res = 0;
+function pow(x,n) {
+	x*n;
 }
