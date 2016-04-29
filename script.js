@@ -232,7 +232,17 @@ function min(a,b){
 
 // функция возведения в степень
 
-var res = 0;
-function pow(x,n) {
-	x*n;
+var dig = +prompt ('Введите число');
+var step = +prompt ('Введите степень');
+var result = 1;
+
+function pow() {
+	result = dig*result;
+	return result;
 }
+
+while (dig>=1 && step>=1) { // числа должны быть больше 1
+pow ();
+step--;
+}
+alert (result);
